@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+</head>
+<body>
+    <header>
+    <h1>formulario</h1>
+    <p>formulario de contacto</p>
+    </header>
+<main>
+    <h2>formulario</h2>
+    <p>rellena el formulario</p>
+<section>
+    <h2>informacion personal</h2>
+    <form action="/submit" method="post">
+        <label for="Nombre">nombre:</label>
+        <input type="text" id="Nombre" name="Nombre" required><br><br>
+        
+        <label for="apellido">apellido:</label>
+        <input type="text" id="apellido" name="apellido" required><br><br>
+        
+        <label for="fecha de nacimiento">fecha de nacimiento:</label><br>
+        <input type="date" id="fecha de nacimiento" name="fecha de nacimiento"><br><br>
+        
+        <label for="genero">genero:</label><br>
+        <input type="radio" id="masculino" name="genero" value="masculino">
+        <label for="masculino">masculino</label><br>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="femenino">femenino</label><br>
+        <input type="radio" id="otro" name="genero" value="otro">
+        <label for="otro">otro</label><br><br>
+
+
+    </form>
+</section>
+<section>
+    <h2>informacion de contacto</h2>
+    <form action="/submit" method="post">
+        <label for="Direccion de correo electronico">Direccion de correo electronico</label><br>
+        <input type="email" id="Direccion de correo electronico" name="Direccion de correo electronico" required><br><br>
+
+        <label for="numero de telefono">numero de telefono:</label>
+        <input type="tel" id="numero de telefono" name="numero de telefono" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+
+        <label for="Direccion">Direccion:</label>
+        <input type="text" id="Direccion" name="Direccion" required><br><br>
+
+    </form>
+</section>
+
+<section>
+    <h2>informacion de cuenta</h2>
+    <form action="/submit" method="post">
+        <label for="Nombre de usuario">Nombre de usuario</label>
+        <input type="text" id="Nombre de usuario" name="Nombre de usuario" required><br><br>
+
+        <label for="contraseña">contraseña:</label>
+        <input type="password" id="contraseña" name="contraseña" required><br><br>
+
+        <label for="confirmacion de contraseña">confirmacion de contraseña</label>
+        <input type="password" id="confirmacion de contraseña" name="confirmacion de contraseña" required><br><br>
+
+
+    </form>
+</section>
+
+<section>
+    <h2>preferencias</h2>
+    <form action="/select" method="post">
+        <label for="color favorito">color favorito:</label>
+        <select id="color favorito" name="color favorito" required>
+            <option value="">--Selecciona un color--</option>
+            <option value="Rojo">Rojo</option>
+            <option value="Azul">Azul</option>
+            <option value="Verde">Verde</option>
+            <option value="Amarillo">Amarillo</option>
+    </form>
+
+</section>
+
+<footer>
+    <label for="Aceptar terminos y condiciones">Aceptar terminos y condiciones:</label>
+    <input type="checkbox" id="Aceptar terminos y condiciones" name="Aceptar terminos y condiciones" required><br><br>
+</footer>
+
+
+        
+    
+
+</html>
