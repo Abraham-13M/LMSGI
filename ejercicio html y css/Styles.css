@@ -9,14 +9,11 @@
 
 /* HEADER */
 
-header {
-    background-color: #f8f9fa;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #f8f9fa;
     background-color: #f8f9fa;
 }
 
@@ -28,7 +25,7 @@ nav .logo {
 
 
 nav ul {
-    list-style: none;
+    
     display: flex;
 }
 
@@ -63,3 +60,8 @@ nav ul li a:hover {
 }
 
 
+/* cta-container*/
+
+.cta-container{
+    background-color: #e9ecef;
+}
