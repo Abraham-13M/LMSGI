@@ -67,6 +67,91 @@ nav ul li a {
 .cta-container{
     background-color: #e9ecef;
     padding: 110px 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
 }
 
-.cta
+.cta-container h1{
+
+    font-size: 2.2em;
+
+
+}
+
+
+.cta-container p{
+
+    max-width: 550px;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin: 0 auto;
+    
+}
+
+
+.services-container{
+    background-color: #f1f3f5;
+    padding: 34px 0;
+    display: flex;
+    gap: 30px;
+}
+
+.services-container div{
+    width: 30%;
+}
+
+
+.contact-container{
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-form{
+    max-width: 500px;
+    padding: 20px;
+    flex-direction: column;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    
+    
+   
+   
+
+}
+
+.contact-form input{
+    background-color: #f1f3f5;
+    border-bottom: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center
+    
+    
+    
+}
+
+.contact-form input h2 nombre  {
+    
+    border-bottom: 3px solid #32cd32;
+}
+
+.contact-form input  h2 correo{
+    
+    border-bottom: #8a2be2;
+}
+
+.contact-form input h2 mensaje{
+
+    border-bottom: 3px solid transparent #ffd747;
+
+}
+
