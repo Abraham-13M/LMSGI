@@ -98,10 +98,24 @@ nav ul li a {
     padding: 34px 0;
     display: flex;
     gap: 30px;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
 }
 
 .services-container div{
     width: 30%;
+    justify-content: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.services-container i{
+    font-size: 2em;
+    margin-bottom: 10px;
 }
 
 
@@ -112,6 +126,7 @@ nav ul li a {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 40px 0;
 }
 
 .contact-form{
@@ -121,6 +136,7 @@ nav ul li a {
     margin: auto;
     display: flex;
     align-items: center;
+    margin: 0 auto;
     
     
    
@@ -128,30 +144,71 @@ nav ul li a {
 
 }
 
-.contact-form input{
+.contact-form input,
+.contact-form textarea{
     background-color: #f1f3f5;
-    border-bottom: #007bff;
+    border-bottom: 3px solid transparent;
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
+    width:100%;
+    padding:10px;
+    margin-bottom: 15px;
+    outline: none;
+    
+    
     
     
     
 }
 
-.contact-form input h2 nombre  {
+.contact-form input:hover,
+.contact-form textarea:hover{
+    border-bottom: 3px solid #007bff;
+}
+
+.input-name  {
     
     border-bottom: 3px solid #32cd32;
 }
 
-.contact-form input  h2 correo{
+.input-email{
     
-    border-bottom: #8a2be2;
+    border-bottom: 3px solid  #8a2be2;
 }
 
-.contact-form input h2 mensaje{
+.contact-form textarea{
 
-    border-bottom: 3px solid transparent #ffd747;
+    border-bottom: 3px solid  #ffd747;
 
+}
+
+
+.contact-form button{
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    cursor:pointer;
+}
+
+.contact-form button:hover{
+    background-color: #343a40;
+}
+
+footer{
+    background-color:#f1f3f5;
+    padding: 20px;
+    text-align: center;
+}
+
+footer h3,
+footer small{
+    font-weight: bold;
+}
+
+footer a{
+    font-size:2em;
+    text-decoration: none;
 }
 
