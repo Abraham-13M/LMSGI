@@ -1,0 +1,22 @@
+*{
+    --primary-blue: #074167;
+    --dark-blue: #143548;
+    --background-light: #ffebd9;
+    --hover-light: #CCB299;
+    font-family: 'Montserrat', Light 300;
+
+}
+
+body{
+    background-color: var(--hover-light);
+    cursor: pointer;
+}
+
+
+.input:focus{
+
+    border-radius: 4px;
+
+}
+
+
