@@ -1,22 +1,153 @@
-*{
+:root{
+
     --primary-blue: #074167;
     --dark-blue: #143548;
     --background-light: #ffebd9;
     --hover-light: #CCB299;
-    font-family: 'Montserrat', Light 300;
+}
 
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
 }
 
 body{
-    background-color: var(--hover-light);
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--dark-blue);
+}
+
+header{
+    display: flex;
+    background-color:var(--dark-blue);
+    padding: 20px;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.menu{
+
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.25s;
+}
+
+.menu a:hover{
+    color: var(--hover-light);
+}
+
+.logo{
+    transition: transform 0.25s;
     cursor: pointer;
 }
 
+.logo:hover{
+    transform: rotate(360deg);
+}
 
-.input:focus{
+.search{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
 
+.search input{
+    
+    outline: none;
     border-radius: 4px;
+    padding: 5px 10px;
+    transition: transform 0.25s;
+    background-color: var(--background-light);
+    
+}
+
+.search input:hover{
+    
+    transform: scale(1.1);
+}
+
+.search button{
+    cursor:pointer;
+    background: none;
+    border:none;
+    font-size: 18px;
+    transition: transform 0.25s;
+    transition: color 0.25s;
+}
+
+.search button:hover{
+    transform: scale(1.3);
+    color: var(--hover-light);
+}
+
+.cta-container{
+    display:flex;
+    height: 550px;
+    background-size: cover;
+    background-image: url("gato fondo.jpg");
+    background-position: center center;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    filter: sepia(30%);
+    justify-content: center;
+    background-attachment: fixed;
+}
+
+.cta-container h1{
+    font-size: 50px;
+    color: var(--primary-blue);
+    text-shadow: 8px 4px 6px var(--hover-light);
+}
+
+.footer-copy {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 47%;
+    color: var(--background-light);
+    background-color:cornflowerblue;
+    height: 70px;
+    
+    
+    
+    
+}
+
+.footer-menu{
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    margin: 30px;
+    color:var(--background-light);
+    background-color: var(--dark-blue);
+    
+    
 
 }
 
+.footer-menu a{
+    display:flex;
+    flex-direction:column;
+    text-decoration: none;
+    color: var(--background-light);
+    transition: color 0.25s;
+    cursor: pointer;
+}
+
+.footer-menu a:hover{
+    color: var(--hover-light);
+}
 
